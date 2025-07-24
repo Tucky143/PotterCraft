@@ -18,6 +18,10 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.pottercraft.init.PottercraftModTabs;
+import net.mcreator.pottercraft.init.PottercraftModItems;
+import net.mcreator.pottercraft.init.PottercraftModEntities;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
 import java.util.List;
@@ -35,6 +39,10 @@ public class PottercraftMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		PottercraftModItems.REGISTRY.register(modEventBus);
+		PottercraftModEntities.REGISTRY.register(modEventBus);
+		PottercraftModTabs.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

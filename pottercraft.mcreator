@@ -1,17 +1,155 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "DementorNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementor_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/DementorNaturalEntitySpawningConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Dementor",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/entity/DementorEntity.java",
+          "src/main/resources/assets/pottercraft/models/item/dementor_spawn_egg.json",
+          "src/main/java/net/mcreator/pottercraft/client/renderer/DementorRenderer.java",
+          "src/main/resources/data/pottercraft/neoforge/biome_modifier/dementor_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "DementorOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementor_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/DementorOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ExpectoPatronum",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expecto_patronum",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pottercraft/damage_type/expecto_patronum.json"
+        ]
+      }
+    },
+    {
+      "name": "DementorEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementor_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/DementorEntityIsHurtProcedure.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:Dementor"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.pottercraft.dementor_spawn_egg": "Dementor Spawn Egg",
+      "entity.pottercraft.dementor": "Dementor",
+      "death.attack.expecto_patronum": "%1$s saw the light",
+      "death.attack.expecto_patronum.item": "%1$s was illuminated by %2$s using %3$s",
+      "death.attack.expecto_patronum.player": "%1$s was eternally blinded by %2$s"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/pottercraft/init/PottercraftModTabs.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/pottercraft/init/PottercraftModModels.java",
       "src/main/java/net/mcreator/pottercraft/PottercraftMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/pottercraft/init/PottercraftModItems.java",
+      "src/main/java/net/mcreator/pottercraft/init/PottercraftModEntities.java",
+      "src/main/java/net/mcreator/pottercraft/init/PottercraftModEntityRenderers.java"
     ]
   },
   "foldersRoot": {
@@ -33,5 +171,5 @@
     "currentGenerator": "neoforge-1.21.1",
     "modElementsPackage": "net.mcreator.pottercraft"
   },
-  "mcreatorVersion": 202500227613
+  "mcreatorVersion": 202500228610
 }

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.14,
+    "scaling": "never",
+    "effects": "thorns",
+    "normalDeathMessage": "%1$s saw the light",
+    "itemDeathMessage": "%1$s was illuminated by %2$s using %3$s",
+    "playerDeathMessage": "%1$s was eternally blinded by %2$s"
+  }
+}

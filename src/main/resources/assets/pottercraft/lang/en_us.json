@@ -1,1 +1,7 @@
-{}
+{
+  "item.pottercraft.dementor_spawn_egg": "Dementor Spawn Egg",
+  "entity.pottercraft.dementor": "Dementor",
+  "death.attack.expecto_patronum": "%1$s saw the light",
+  "death.attack.expecto_patronum.item": "%1$s was illuminated by %2$s using %3$s",
+  "death.attack.expecto_patronum.player": "%1$s was eternally blinded by %2$s"
+}
