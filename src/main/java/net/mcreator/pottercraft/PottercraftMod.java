@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.pottercraft.network.PottercraftModVariables;
 import net.mcreator.pottercraft.init.PottercraftModTabs;
 import net.mcreator.pottercraft.init.PottercraftModItems;
 import net.mcreator.pottercraft.init.PottercraftModEntities;
@@ -43,6 +44,7 @@ public class PottercraftMod {
 		PottercraftModItems.REGISTRY.register(modEventBus);
 		PottercraftModEntities.REGISTRY.register(modEventBus);
 		PottercraftModTabs.REGISTRY.register(modEventBus);
+		PottercraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

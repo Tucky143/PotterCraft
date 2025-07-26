@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.pottercraft.entity.ExpectoPatronumProjectileEntity;
 import net.mcreator.pottercraft.entity.DementorEntity;
 import net.mcreator.pottercraft.PottercraftMod;
 
@@ -25,6 +26,8 @@ public class PottercraftModEntities {
 			EntityType.Builder.<DementorEntity>of(DementorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3)
 
 					.sized(1f, 1.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ExpectoPatronumProjectileEntity>> EXPECTO_PATRONUM_PROJECTILE = register("expecto_patronum_projectile",
+			EntityType.Builder.<ExpectoPatronumProjectileEntity>of(ExpectoPatronumProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 10f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

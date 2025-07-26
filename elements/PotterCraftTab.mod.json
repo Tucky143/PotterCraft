@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Potter Craft",
+    "icon": {
+      "value": "CUSTOM:OakWand"
+    },
+    "showSearch": true
+  }
+}

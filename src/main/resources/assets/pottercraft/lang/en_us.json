@@ -3,5 +3,11 @@
   "entity.pottercraft.dementor": "Dementor",
   "death.attack.expecto_patronum": "%1$s saw the light",
   "death.attack.expecto_patronum.item": "%1$s was illuminated by %2$s using %3$s",
-  "death.attack.expecto_patronum.player": "%1$s was eternally blinded by %2$s"
+  "death.attack.expecto_patronum.player": "%1$s was eternally blinded by %2$s",
+  "advancements.wands_away.title": "Wands Away!",
+  "advancements.wands_away.descr": "Craft a wand for the first time",
+  "advancements.potter_craft.title": "PotterCraft",
+  "advancements.potter_craft.descr": "Install and play the mod",
+  "item.pottercraft.oak_wand": "Oak Wand",
+  "item_group.pottercraft.potter_craft_tab": "Potter Craft"
 }

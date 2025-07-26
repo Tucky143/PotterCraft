@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:end_rod"
+    },
+    "title": {
+      "translate": "advancements.wands_away.title"
+    },
+    "description": {
+      "translate": "advancements.wands_away.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wands_away_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "pottercraft:potter_craft"
+}

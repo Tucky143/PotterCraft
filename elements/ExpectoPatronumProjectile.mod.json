@@ -1,0 +1,25 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:OakWand"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.beacon.activate"
+    },
+    "igniteFire": false,
+    "disableGravity": true,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 1,
+    "entityModel": "ModelExpectoPatronum",
+    "customModelTexture": "expecto_patronum.png",
+    "modelWidth": 0.5,
+    "modelHeight": 10.0,
+    "onHitsEntity": {
+      "name": "ExpectoPatronumProjectileProjectileHitsLivingEntity"
+    }
+  }
+}

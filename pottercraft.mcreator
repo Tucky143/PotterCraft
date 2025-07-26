@@ -29,7 +29,8 @@
         "files": [
           "src/main/java/net/mcreator/pottercraft/procedures/DementorNaturalEntitySpawningConditionProcedure.java"
         ]
-      }
+      },
+      "path": "~/Entities/Dementor"
     },
     {
       "name": "Dementor",
@@ -44,7 +45,8 @@
           "src/main/java/net/mcreator/pottercraft/client/renderer/DementorRenderer.java",
           "src/main/resources/data/pottercraft/neoforge/biome_modifier/dementor_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities/Dementor"
     },
     {
       "name": "DementorOnEntityTickUpdate",
@@ -78,7 +80,8 @@
         "files": [
           "src/main/java/net/mcreator/pottercraft/procedures/DementorOnEntityTickUpdateProcedure.java"
         ]
-      }
+      },
+      "path": "~/Entities/Dementor"
     },
     {
       "name": "ExpectoPatronum",
@@ -90,7 +93,8 @@
         "files": [
           "src/main/resources/data/pottercraft/damage_type/expecto_patronum.json"
         ]
-      }
+      },
+      "path": "~/Spells"
     },
     {
       "name": "DementorEntityIsHurt",
@@ -120,10 +124,194 @@
         "files": [
           "src/main/java/net/mcreator/pottercraft/procedures/DementorEntityIsHurtProcedure.java"
         ]
+      },
+      "path": "~/Entities/Dementor"
+    },
+    {
+      "name": "WandsAway",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wands_away",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pottercraft/advancement/wands_away.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PotterCraft",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potter_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pottercraft/advancement/potter_craft.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PlayerJoinsWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins_world",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/PlayerJoinsWorldProcedure.java"
+        ]
       }
+    },
+    {
+      "name": "OakWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/item/OakWandItem.java",
+          "src/main/resources/assets/pottercraft/models/item/oak_wand.json"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "PotterCraftTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potter_craft_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "ExpectoPatronumProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expecto_patronum_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/ExpectoPatronumProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "ExpectoPatronumProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expecto_patronum_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/client/renderer/ExpectoPatronumProjectileRenderer.java",
+          "src/main/java/net/mcreator/pottercraft/entity/ExpectoPatronumProjectileEntity.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "OakWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/OakWandRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "ExpectoPatronumProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expecto_patronum_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/pottercraft/procedures/ExpectoPatronumProjectileWhileProjectileFlyingTickProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "CurrentSpell",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "LastSpell",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "WizardLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "ENTITIES:minecraft:undead": [
@@ -137,7 +325,13 @@
       "entity.pottercraft.dementor": "Dementor",
       "death.attack.expecto_patronum": "%1$s saw the light",
       "death.attack.expecto_patronum.item": "%1$s was illuminated by %2$s using %3$s",
-      "death.attack.expecto_patronum.player": "%1$s was eternally blinded by %2$s"
+      "death.attack.expecto_patronum.player": "%1$s was eternally blinded by %2$s",
+      "advancements.wands_away.title": "Wands Away!",
+      "advancements.wands_away.descr": "Craft a wand for the first time",
+      "advancements.potter_craft.title": "PotterCraft",
+      "advancements.potter_craft.descr": "Install and play the mod",
+      "item.pottercraft.oak_wand": "Oak Wand",
+      "item_group.pottercraft.potter_craft_tab": "Potter Craft"
     }
   },
   "metadata": {
@@ -145,6 +339,7 @@
       "src/main/java/net/mcreator/pottercraft/init/PottercraftModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/pottercraft/init/PottercraftModModels.java",
+      "src/main/java/net/mcreator/pottercraft/network/PottercraftModVariables.java",
       "src/main/java/net/mcreator/pottercraft/PottercraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/pottercraft/init/PottercraftModItems.java",
@@ -154,7 +349,29 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Entities",
+        "children": [
+          {
+            "name": "Dementor",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Spells",
+        "children": []
+      },
+      {
+        "name": "Wands",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "pottercraft",
